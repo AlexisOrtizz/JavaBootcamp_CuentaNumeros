@@ -9,12 +9,12 @@ public class SmallerNumberSameDigits {
     {
         String textOrigen = String.valueOf(n);
         char [] arrOrigen = textOrigen.toCharArray();
-        sort(arrOrigen);
+        sort(arrOrigen); //ordenar
 
         for(long i = n-1; i >= 1; i--) {
             String textFin = String.valueOf(i);
             char [] arrFin = textFin.toCharArray();
-            sort(arrFin);
+            sort(arrFin); //ordenar
 
             if(Arrays.equals(arrOrigen, arrFin)) {
                 return i;
